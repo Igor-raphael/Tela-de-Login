@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+}
+
+.Main-Body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.Left-Page {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Left-Page>h1 {
+    margin: 30px 0px;
+}
+
+.Left-Page>p {
+    height: 60px;
+    font-size: medium;
+    font-weight: 900;
+
+}
+
+.BTN-Login {
+    margin-top: 10px;
+    background: RGB(0, 102, 255);
+    padding: 13px;
+    width: 17vw;
+    border: solid;
+    color: RGB(255, 255, 255);
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.BTN-Login:hover {
+    box-shadow: 0px 0px 5px RGB(127, 255, 0),
+        0px 0px 17px RGB(127, 255, 0),
+        0px 0px 17px RGB(127, 255, 0);
+}
+
+.Right-Page {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Right-Page>img {
+    width: 100%;
+    height: 100vh;
+}
+
+.Form-Group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form-Group>label {
+    width: 20vw;
+    font-weight: 700;
+}
+
+.Form-Group>input {
+    padding: 10px;
+    border: solid RGB(0, 51, 153);
+    outline: none;
+    width: 18vw;
+}
+
+.Form-Group>input::placeholder {
+    color: black;
+}
+
+@media (max-width: 850px) {
+    .Main-Body {
+        flex-direction: column;
+    }
+
+    .Right-Page {
+        display: none;
+    }
+
+    .Left-Page {
+        width: 100%;
+    }
+
+    .Form-Group>label {
+        width: 38vw;
+    }
+
+    .Form-Group>input {
+        width: 38vw;
+
+    }
+}
+
+@media (max-width: 460px) {
+    .BTN-Login {
+        width: 30%;
+    }
+
+    .Form-Group>label{
+        padding-right: 20px;
+    }
+
+}
